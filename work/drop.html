@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>下拉菜单实例|菜鸟教程(runoob.com)</title>
+		<meta charset="utf-8">
+		<style>
+		 *{margin:0;padding:0;}
+		 div{width: 1000px;margin: auto;}
+		 ul{list-style: none;}
+		 #container{position: relative;}
+		 #container>ul li{background-color: aquamarine;display: inline-block;
+		  width: 90px;height: 35px;border-right: 2px solid burlywood;
+		  font-size: 18px;font-weight: bold;text-align: center;
+		  line-height: 35px;}
+		  #container>ul li:last-child{border-right: 0px; ;
+		  }
+		  #container>ul li:hover{background-color: #7FFF00;}
+		  .drop-content{background-color: chartreuse;width: 90px;
+		             position: absolute;left:184px;display: none;}
+		#container>ul li:nth-child(3):hover .drop-content{display: block;}
+		</style>
+	</head>
+	<body>
+         <div id="container">
+			 <ul>
+				 <li>首页</li><li>产品展示</li><li>下拉菜单
+                    <div class="drop-content">
+                        <ul>
+                            <li>子1</li>
+                            <li>子2</li>
+                            <li>子3</li>
+                        </ul>
+                    </div>
+                </li><li>联系我们</li>
+			 </ul>
+			 <div class="drop-content">
+				 <ul>
+				 	<li>子1</li><li>子2</li><li>子3</li>
+				 </ul>
+				 
+			 </div>
+			 
+			 
+		 </div>
+   
+	</body>
+</html>

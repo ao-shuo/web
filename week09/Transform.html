@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0px;padding: 0px;}
+    body{background-color: #333;color: aliceblue;}
+    a:link{color:aliceblue;text-decoration: none;}
+    a:hover{color: brown;cursor: pointer;}
+    #container {height: 200px;width: 1000px;margin: auto;}
+    #container ul{list-style: none;}
+    #container ul li a div{height: 180px;width: 225px;}
+    #container ul li{float: left;margin-right: 30px;}
+    #container ul li:last-child{margin-right: 0px;}
+    #container ul li a{display: block;position: relative;height: 180px;width: 225px;
+        perspective: 350px;
+    }
+    #container ul li div:first-child{position: absolute;left: 0px;top: 0px;z-index: 2;transition: 1s;
+    backface-visibility: hidden;}
+    #container ul li div:last-child{position: absolute;left: 0px;top: 0px;z-index: 1;transition: 1s;
+    transform: rotateY(180deg);}
+    #container ul li a:hover div:first-child{transform: rotateY(180deg);}
+    #container ul li a:hover div:last-child{transform: rotateY(360deg);}
+    
+</style>
+<body>
+    <div id="container">
+        <h2><a>祖国</a>繁荣昌盛</h2>
+        <ul>
+            <li>
+                <a>
+                    <div><img src="../resource/华为麒麟芯片.jpg"></div>
+                    <div>麒麟，是业界领先的智能手机芯片解决方案，拥有华为海思先进的 SoC 
+                        架构和领先的生产技术。麒麟芯片主要高端旗舰型号包括麒麟9000s、麒麟9000芯片
+                        、麒麟9000E 芯片、麒麟990 5G芯片、麒麟990芯片等</div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div><img src="../resource/华为麒麟芯片.jpg"></div>
+                    <div>麒麟，是业界领先的智能手机芯片解决方案，拥有华为海思先进的 SoC 
+                        架构和领先的生产技术。麒麟芯片主要高端旗舰型号包括麒麟9000s、麒麟9000芯片
+                        、麒麟9000E 芯片、麒麟990 5G芯片、麒麟990芯片等</div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div><img src="../resource/华为麒麟芯片.jpg"></div>
+                    <div>麒麟，是业界领先的智能手机芯片解决方案，拥有华为海思先进的 SoC 
+                        架构和领先的生产技术。麒麟芯片主要高端旗舰型号包括麒麟9000s、麒麟9000芯片
+                        、麒麟9000E 芯片、麒麟990 5G芯片、麒麟990芯片等</div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div><img src="../resource/华为麒麟芯片.jpg"></div>
+                    <div>麒麟，是业界领先的智能手机芯片解决方案，拥有华为海思先进的 SoC 
+                        架构和领先的生产技术。麒麟芯片主要高端旗舰型号包括麒麟9000s、麒麟9000芯片
+                        、麒麟9000E 芯片、麒麟990 5G芯片、麒麟990芯片等</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

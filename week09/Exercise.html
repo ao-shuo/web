@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: BRADHITC;
+            src: url(../resource/BRADHITC.TTF);
+        }
+        body{background-image: url(../resource/images/bg.jpg);font-family: BRADHITC;}
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: chocolate;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: saddlebrown;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            margin: 150px auto;
+            padding: 20px 20px;
+            border-radius: 50px;
+            background:linear-gradient(180deg,rgba(255,255,255,.4),rgba(255,255,255,1));
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="frname">First Name</label>
+        <input type="text" id="frname" name="firstname" placeholder="firstname...">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="lastname...">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="china">china</option>
+            <option value="usa">usa</option>
+            <option value="canada">canada</option>
+        </select>
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>

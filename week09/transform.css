@@ -1,0 +1,23 @@
+
+*{padding: 0;margin: 0;}
+h2,h3{color: aliceblue;text-align: center;margin: 20px;}
+body{background-color: #333333;color: whitesmoke;}
+a:link{color: aliceblue;text-decoration: none;}
+a:hover{color: brown;cursor: pointer;}
+#container{height: 200px;width: 1000px;
+    margin: auto;}
+#container ul{list-style: none;}
+#container ul li a div{height: 180px;width: 225px;}
+#container ul li {float: left;margin-right: 30px;}
+#container ul li:last-child{margin-right: 0px;}
+#container ul li a {display:block; position: relative;
+    height: 180px;width: 225px;perspective: 350px;}
+#container ul li  div:first-child{position: absolute;left:0;
+    top:0;z-index: 2; transition: 1s;backface-visibility: hidden;}
+#container ul li div:last-child{position: absolute;left:0;
+    top:0;background-image: url(../resource/华为麒麟芯片.jpg);
+    height: 180px;width: 225px;z-index: 1; transition: 1s;
+    transform: rotateY(180deg);}
+#container ul li div h3{margin: 10px;}
+#container ul li a:hover div:first-child{transform: rotateY(180deg);}
+#container ul li a:hover div:last-child{transform: rotateY(360deg);}

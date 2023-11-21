@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户信息表单</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+    <form action="recieve.php">
+        <label for="firstname">姓名:</label>
+        <input type="text" id="firstname" name="firstname" value="蠢猪高宇鑫"><br>
+        <a href="./div.html">蠢猪高宇鑫</a>
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="pwd" value=""><br>
+
+        <fieldset>
+            <legend>性别:</legend>
+            <input type="radio" id="male" name="gender" value="0">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="2">
+            <label for="female">女</label>
+            <input type="radio" id="other" name="gender" value="3">
+            <label for="other">🐖</label>
+        </fieldset>
+
+        <label for="region">地区:</label>
+        <select id="region" name="region">
+            <option value="default">请选择</option>
+            <option value="hebei">河北</option>
+            <option value="chongqing">重庆</option>
+            <option value="zhujuan">猪圈</option>
+            <option value="蒙古">蒙古</option>
+            <!-- 其他选项 -->
+        </select><br>
+
+        <fieldset>
+            <legend>爱好:</legend>
+            <input type="checkbox" id="game" name="favorite" value="game">
+            <label for="game">手游</label>
+            <input type="checkbox" id="sports" name="favorite" value="sports">
+            <label for="sports">运动</label>
+            <input type="checkbox" id="study" name="favorite" value="study">
+            <label for="study">学习</label>
+            <input type="checkbox" id="films" name="favorite" value="films">
+            <label for="films">电影</label>
+            <input type="checkbox" id="chidafen" name="favorite" value="chidafen">
+            <label for="chidafen">吃小粪</label>
+        </fieldset>
+
+        <label for="introduction">自我介绍:</label>
+        <textarea id="introduction" cols="40" rows="10">在这里写自我介绍...</textarea><br>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>

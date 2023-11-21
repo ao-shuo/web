@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报名参加杭州亚运会</title>
+    <style>
+        table {width: 80%;border-collapse: collapse;margin: 20px auto;}
+        th,
+        td {border: 1px solid #ccc;padding: 10px;text-align: center;}
+        th {background-color: #f2f2f2;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+</head>
+
+<body>
+    <h1>报名参加杭州亚运会</h1>
+
+    <form>
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">电子邮件：</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="country">国家：</label>
+        <select id="country" name="country">
+            <option value="china">中国</option>
+            <option value="japan">日本</option>
+            <option value="usa">美国</option>
+            <option value="eluosi">俄罗斯</option>
+            <option value="yingguo">英国</option>
+        </select><br><br>
+
+        <label>运动项目：</label><br>
+        <input type="checkbox" id="swimming" name="sports[]" value="swimming">
+        <label for="swimming">游泳</label><br>
+        <input type="checkbox" id="cycling" name="sports[]" value="cycling">
+        <label for="cycling">自行车</label><br>
+        <input type="checkbox" id="boxing" name="sports[]" value="box">
+        <label for="box">自由搏击</label><br>
+        <input type="checkbox" id="running" name="sports[]" value="running">
+        <label for="running">跑步</label><br>
+        <table>
+            <tr><th>项目 1</th><th>项目 2</th><th>项目 3</th><th>项目 4</th><th>项目 5</th><th>项目 6</th>
+            </tr>
+            <tr><td>游泳</td><td>篮球</td><td>足球</td><td>网球</td><td>羽毛球</td><td>乒乓球</td>
+            </tr>
+            <tr><td>跳远</td><td>跳高</td><td>田径</td><td>射箭</td><td>举重</td><td>击剑</td>
+            </tr>
+            <tr><td>射击</td><td>游艇</td><td>滑雪</td><td>马术</td><td>拳击</td><td>赛车</td>
+            </tr>
+            <tr><td>自行车</td><td>登山</td><td>游戏</td><td>冰壶</td><td>射击</td><td>曲棍球</td>
+            </tr>
+            <tr><td>游泳</td><td>跳远</td><td>射击</td><td>自行车</td><td>篮球</td><td>足球</td>
+            </tr>
+            <tr><td>赛车</td><td>击剑</td><td>马术</td><td>拳击</td><td>网球</td><td>乒乓球</td>
+            </tr>
+        </table>
+        <input type="submit" value="提交">
+
+    </form>
+</body>
+
+</html>
